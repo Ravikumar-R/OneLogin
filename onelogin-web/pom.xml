@@ -20,7 +20,17 @@
 		<artifactId>spring-webmvc</artifactId>
 		<version>4.2.4.RELEASE</version>
 	</dependency>	
-</dependencies>
+	<dependency>
+		<groupId>com.tcs.klm</groupId>
+		<artifactId>onelogin-domain</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
+	<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
+  </dependencies>
   <build>
     <testSourceDirectory>src/test/resource</testSourceDirectory>
     <resources>
