@@ -20,7 +20,7 @@ import com.tcs.klm.domain.UserLogin;
  */
 @Controller
 public class OneLogin {
-@RequestMapping("/login")
+@RequestMapping("/")
 public ModelAndView firstPage() {  
 	UserLogin credentials = new UserLogin();
     return new ModelAndView("login","credentials",credentials);  
@@ -35,4 +35,7 @@ public ModelAndView loginValidation(@ModelAttribute("credentials")UserLogin cred
 	}
 	return new ModelAndView("applications","applications",applications);
 }  
+@RequestMapping(value="getdetails", method=RequestMethod.GET){
+	
+}
 }
